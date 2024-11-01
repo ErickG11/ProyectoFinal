@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Query.Internal;
 using ProyectoFinal.Models;
 
+
 namespace ProyectoFinal.Servicios.Contrato
 {
     public interface IUsuarioService

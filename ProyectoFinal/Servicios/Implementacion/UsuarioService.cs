@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Query.Internal;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Models;
 using ProyectoFinal.Servicios.Contrato;
