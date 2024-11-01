@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using ProyectoFinal.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DbloginContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSQL"));
+});
 
 var app = builder.Build();
 
