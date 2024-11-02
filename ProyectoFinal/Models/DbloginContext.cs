@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using ProyectoFinal.Models;
 
 namespace ProyectoFinal.Models;
 
@@ -42,4 +43,6 @@ public partial class DbloginContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+public DbSet<ProyectoFinal.Models.Admin> Admin { get; set; } = default!;
 }
